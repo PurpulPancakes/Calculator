@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@font-face{
+    font-family: Game;
+    src:url(game.ttf) format('truetype'),
+    url(game.woff2) format('woff2'),
+    url(game.woff) format('woff');
+}
+
+/* BODY STYLES */
+
+body{
+    background: rgb(190, 190, 190);
+    font-size: 22px;
+}
+
+html{
+    height: 100%;
+}
+
+/* HEADER STYLES */
+
+.footer{
+    color: #31317D;
+    padding-left: 480%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 2000px;
+}
+
+h1{
+    font-size: 40px;
+    margin: 20px;
+}
+
+/* CALCULATOR CONTAINER */
+
+#calculator{
+    width: 522px;
+    height: auto;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 500%;
+    align-content: center;
+    background-color: #9bbc0f;
+    padding-top: 30px;
+    border-top: #918E93 solid 50px;
+    border-bottom: #918E93 solid 50px;
+    border-left: #918E93 solid 120px;
+    border-right: #918E93 solid 120px;
+    border-radius: 25px;
+    border-bottom-right-radius: 120px;
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
+}
+
+/* DISPLAY CLEAR AND DELETE STYLES */
+
+#display{
+    background-color: #9bbc0f;
+    height: 40px;
+    border: 5px #306230 solid;
+    padding-top: 5px;
+    text-align: right;
+    float: none;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #0f380f;
+    font-family: Game, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-transition: background-color 2s, color 2s, border 2s;
+    transition: background-color 2s, color 2s,  border 2s;
+}
+
+.clear, .delete, .ce{
+    height: 50px;
+    background-color: #0f380f;
+    border: 5px #306230 solid;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 16px;
+    color: #8bac0f;
+    -webkit-transition: background-color 2s, color 2s, border 2s;
+    transition: background-color 2s, color 2s, border 2s;
+}
+
+#clearDelete{
+    width: 100%;
+}
+
+/* NUMBER ROWS */
+
+button{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: #8bac0f;
+    border: 5px #306230 solid;
+    font-size: 25px;
+    color: #0f380f;
+    font-family: Game, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8em;
+    -webkit-transition: background-color 2s, color 2s, border 2s;
+    transition: background-color 2s, color 2s, border 2s;
+}
+
+button.clear{
+    font-size: 0.9em;
+}
+button.delete{
+    font-size: 0.9em;
+}
+button.ce{
+    font-size: 0.9em;
+}
+
+button:hover{
+    /*background: url(tenor.gif) 50% 50%;*/
+
+}
+
+.operator{
+    background-color: #306230;
+    border: 5px #0f380f solid;
+    color: #8bac0f;
+    -webkit-transition: background-color 2s, color 2s, border 2s;
+    transition: background-color 2s, color 2s, border 2s;
+}
+
+#equal{
+    background-color: #0f380f;
+    border: 5px #306230 solid;
+    color: #8bac0f;
+    -webkit-transition: background-color 2s, color 2s, border 2s;
+    transition: background-color 2s, color 2s, border 2s;
+}
+
+button img{
+    display: block;
+    position: relative;
+    opacity: 100%;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
+button.img{
+    padding: 4%;
+}
+
+span.slider{
+    margin-left: 100%;
+    width: 100%;
+}
+
+p.onOff{
+    margin-left: 92%;
+    width: 100%;
+    font-size: 0.6em;
+    color: rgb(190, 190, 190);
+    text-shadow: rgb(175, 175, 175) 1px 1px 0px, rgb(190, 190, 190) 1px 1px 2px, rgb(190, 190, 190) 1px 1px 5px, rgb(210, 210, 210) -1px -1px 0px;
+    font-family: Lato;
+}
+
+p.battery{
+    font-family: Lato;
+    color: rgb(235, 235, 235);
+    position: absolute;
+    top: 1150%;
+    left: 535%;
+    font-size: 0.7em;
+}
+
+.power{
+    position: relative;
+    top: 850%;
+    left: 565%;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 100, 0);
+    box-shadow: rgb(255, 0, 0) 0px 0px 1px, rgb(255, 0, 0) 0px 0px 2px, rgb(255, 0, 0) 0px 0px 3px, rgb(255, 0, 0) 0px 0px 4px, rgb(255, 0, 0) 0px 0px 5px, rgb(255, 0, 0) 0px 0px 6px, rgb(255, 0, 0) 0px 0px 7px, rgb(255, 0, 0) 0px 0px 8px, rgb(255, 0, 0) 0px 0px 9px, rgb(255, 0, 0) 0px 0px 10px, rgb(255, 0, 0) 0px 0px 11px, rgb(255, 0, 0) 0px 0px 12px, rgb(255, 0, 0) 0px 0px 13px, rgb(255, 0, 0) 0px 0px 14px, rgb(255, 0, 0) 0px 0px 15px, rgb(255, 0, 0) 0px 0px 16px, rgb(255, 0, 0) 0px 0px 17px, rgb(255, 0, 0) 0px 0px 18px, rgb(255, 0, 0) 0px 0px 19px, rgb(255, 0, 0) 0px 0px 20px, rgb(255, 0, 0) 0px 0px 21px, rgb(255, 0, 0) 0px 0px 22px, rgb(255, 0, 0) 0px 0px 23px, rgb(255, 0, 0) 0px 0px 24px;
+    border-radius: 50%;
+    z-index: 999;
+    -webkit-transition: background-color 2s, box-shadow 2s;
+    transition: background-color 2s, box-shadow 2s;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="calcBase.css" rel="stylesheet"/>
+    <link href="calcStyles.css" rel="stylesheet"/>
+    <link href="onOff.css" rel="stylesheet"/>
+    <script src="calc.js" defer></script>
+</head>
+<body>
+
+    <!--HEADER-->
+
+    <label class="switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider"></span>
+        <p class="onOff">&#x25C4;OFF&#x2022;ON&#x25BA;</p>
+        <div class="power"></div>
+        <div><p class="battery">BATTERY</p></div>
+
+    <div class="container" id="calculator">
+        <!--DISPLAY-->
+        <div class="row">
+            <div class="col" id="display">
+                
+            </div>
+        </div>
+
+    <!--FIRST ROW OF BUTTONS, CLR, DEL, CE-->
+    <div class="row">
+        <div class="col" id="clearDelete">
+            <button class="clear" onclick="clearButton()">CLR</button>
+            <button class="delete" onclick="backspace()">DEL</button>
+            <button class="ce" onclick="clearNumberTwo()">CE</button>
+        </div>
+    </div>
+
+    <!--SECOND ROW OF BUTTONS, 7, 8, 9, /, xsquared-->
+    <div class="row">
+        <div class="col">
+            <button class="num-button" onclick="setValue(7)">7</button>
+            <button class="num-button" onclick="setValue(8)">8</button>
+            <button class="num-button" onclick="setValue(9)">9</button>
+            <button class="operator" onclick="setOperator(4)">/</button>
+            <button class="operator" onclick="setOperator(5)">x&sup2;</button>
+        </div>
+    </div>
+
+    <!--THIRD ROW OF BUTTONS, 4, 5, 6, X, squareroot-->
+    <div class="row">
+        <div class="col">
+            <button class="num-button" onclick="setValue(4)">4</button>
+            <button class="num-button" onclick="setValue(5)">5</button>
+            <button class="num-button" onclick="setValue(6)">6</button>
+            <button class="operator" onclick="setOperator(3)">X</button>
+            <button class="operator" onclick="setOperator(6)">&#8730;X</button>
+        </div>
+    </div>
+
+    <!--FOURTH ROW OF BUTTONS, 1, 2, 3, --->
+    <div class="row">
+        <div class="col">
+            <button class="num-button" onclick="setValue(1)">1</button>
+            <button class="num-button" onclick="setValue(2)">2</button>
+            <button class="num-button" onclick="setValue(3)">3</button>
+            <button class="operator" onclick="setOperator(2)">-</button>
+            <button class="operator" onclick="setOperator(7)">&#185;/&#8339;</button>
+        </div>
+    </div>
+
+    <!--FIFTH ROW OF BUTTONS, 0, ., =, +-->
+    <div class="row">
+        <div class="col">
+            <button class="num-button" onclick="setValue(0)">0</button>
+            <button class="operator" onclick="setDecimal()">.</button>
+            <button class="operator" id="equal" onclick="equalClick()">=</button>
+            <button class="operator" onclick="setOperator(1)">+</button>
+            <button class="img" onclick="specialButtonDoesNothing()"><img src="tenor.gif" /></button>
+        </div>
+    </div>
+    </label>
+
+</div>
+
+<div class="footer">
+    <h1><i>GAMEBOY&#8482; CALCULATOR</i></h1>
+</div>
+    
+</body>
+</html>
